@@ -1,0 +1,68 @@
+/*
+CSSGarden design file by Blake Strawhorn
+01 Color
+02 Layout
+03 Font
+04 Other Decoration 
+*/
+
+/*
+Color
+*/
+html{
+    background-color: hsla(200, 30%, 30%, .7);
+    padding: 5%;
+}
+
+body{
+    background-color: hsla(271, 70%, 80%, 0.7);
+    padding: 5%;
+}
+
+div.preamble, div.requirements, div.benefits{
+    color: hsla(180, 0%, 25%, .9);
+    background-color: hsla(100, 100%, 100%, 1);
+}
+
+header h1{
+    background-color: hsla(0, 95%, 60%, .9);
+}
+
+footer{
+    background-color: hsla(60, 70%, 60%, .9);
+}
+
+div.participation{
+    background-color: hsla(0, 95%, 60%, .9);
+
+}
+
+aside.sidebar{
+    background-color: hsla(60, 70%, 60%, .9);
+}
+
+/* Layout */
+div, article, section, header, nav, figure, li{
+    position: relative;
+}
+
+header h1{
+    position: relative;
+    top:1000px;
+}
+
+
+
+aside.sidebar{
+    position: absolute;
+    top: 3%;
+    right: 0;
+    width: 20%;
+}
+
+footer{
+    position: fixed;
+    bottom: 0px;
+    width: 30%;
+    left: 30%;
+}
