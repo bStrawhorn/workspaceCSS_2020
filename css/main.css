@@ -22,10 +22,12 @@ body{
 div.preamble, div.requirements, div.benefits{
     color: hsla(180, 0%, 25%, .9);
     background-color: hsla(100, 100%, 100%, 1);
+    padding: 5%;
 }
 
 header h1{
     background-color: hsla(0, 95%, 60%, .9);
+    padding: 2%;
 }
 
 footer{
@@ -44,20 +46,21 @@ aside.sidebar{
 /* Layout */
 div, article, section, header, nav, figure, li{
     position: relative;
+    
 }
 
 header h1{
     position: relative;
-    top:1000px;
+    top:10px;
 }
 
 
 
 aside.sidebar{
     position: absolute;
-    top: 3%;
-    right: 0;
-    width: 20%;
+    top: 1%;
+    right: 0%;
+    width: 40%;
 }
 
 footer{
@@ -65,4 +68,70 @@ footer{
     bottom: 0px;
     width: 30%;
     left: 30%;
+}
+
+section.intro{
+    width:55%
+}
+
+div.explanation{
+    float: left;
+    top: 100px;
+    width: 40%;
+    padding: 5%;
+}
+
+div.participation{
+    margin-left: 50%;
+    top: 100px;
+    width: 40%;
+    padding: 5%;
+}
+
+div.benefits{
+    float: left;
+    top: 100px;
+    width: 40%;
+    padding: 5%;
+}
+
+div.requirements{
+    margin-left: 50%;
+    top: 100px;
+    width: 40%;
+    padding: 5%;
+
+}
+
+/* Font */
+
+body{
+    font-family: 'Rock Salt', cursive;
+    font-size: 10px;
+}
+
+/* Local Font */
+
+@font-face {
+    font-family: myFont;
+    src: url(../fonts/chunkfive.woff);
+}
+
+header h1{
+    font-family: 'myFont';
+    text-indent: -9999px;
+    background-image: url(../img/zengarden.gif);
+}
+
+a{
+    text-decoration: none;
+    color: hsla(271, 70%, 80%, 0.9);
+}
+
+h3{
+    font-size: 2.25em;
+    font-weight: 200;
+    letter-spacing: 1px;
+    line-height: 1em;
+
 }
