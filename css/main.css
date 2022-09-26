@@ -9,93 +9,109 @@ CSSGarden design file by Blake Strawhorn
 /*
 Color
 */
-html{
+html {
     background-color: hsla(200, 30%, 30%, .7);
     padding: 5%;
 }
 
-body{
+body {
     background-color: hsla(271, 70%, 80%, 0.7);
     padding: 5%;
 }
 
-div.preamble, div.requirements, div.benefits{
+div.preamble,
+div.requirements,
+div.benefits {
     color: hsla(180, 0%, 25%, .9);
     background-color: hsla(100, 100%, 100%, 1);
     padding: 5%;
 }
 
-header h1{
+header h1 {
     background-color: hsla(0, 95%, 60%, .9);
     padding: 2%;
 }
 
-footer{
+footer {
     background-color: hsla(60, 70%, 60%, .9);
 }
 
-div.participation{
+div.participation {
     background-color: hsla(0, 95%, 60%, .9);
 
 }
 
-aside.sidebar{
+aside.sidebar {
     background-color: hsla(60, 70%, 60%, .9);
 }
 
 /* Layout */
-div, article, section, header, nav, figure, li{
+div,
+article,
+section,
+header,
+nav,
+figure,
+li {
     position: relative;
-    
+
 }
 
-header h1{
+header h1 {
     position: relative;
-    top:10px;
+    top: 10px;
 }
 
 
 
-aside.sidebar{
+aside.sidebar {
     position: absolute;
     top: 1%;
     right: 0%;
     width: 40%;
 }
 
-footer{
+footer {
     position: fixed;
     bottom: 0px;
     width: 30%;
     left: 30%;
 }
 
-section.intro{
-    width:55%
+section.intro {
+    width: 55%
 }
 
-div.explanation{
+section.intro div.preamble {
+    margin-left: -30%;
+    padding: 5% 5% 5% 30%;
+    border: hsla(0, 95%, 60%, .9) dotted;
+
+
+}
+
+div.explanation {
     float: left;
     top: 100px;
     width: 40%;
     padding: 5%;
 }
 
-div.participation{
+div.participation {
     margin-left: 50%;
     top: 100px;
     width: 40%;
     padding: 5%;
 }
 
-div.benefits{
+div.benefits {
     float: left;
     top: 100px;
     width: 40%;
     padding: 5%;
 }
 
-div.requirements{
+div.requirements {
     margin-left: 50%;
     top: 100px;
     width: 40%;
@@ -105,7 +121,7 @@ div.requirements{
 
 /* Font */
 
-body{
+body {
     font-family: 'Rock Salt', cursive;
     font-size: 10px;
 }
@@ -117,21 +133,79 @@ body{
     src: url(../fonts/chunkfive.woff);
 }
 
-header h1{
+header h1 {
     font-family: 'myFont';
     text-indent: -9999px;
     background-image: url(../img/zengarden.gif);
 }
 
-a{
+a {
     text-decoration: none;
     color: hsla(271, 70%, 80%, 0.9);
 }
 
-h3{
+h3 {
     font-size: 2.25em;
     font-weight: 200;
     letter-spacing: 1px;
     line-height: 1em;
 
+}
+
+/*nav bar on top*/
+
+#zen-resources {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: hsla(180, 0%, 25%, .9);
+
+}
+
+#zen-resources h3 {
+    display: none;
+}
+
+#zen-resources ul li {
+    display: inline-block;
+    width: 15%;
+    padding: 5px;
+    border: 5px;
+    list-style: none;
+
+}
+
+#zen-resources a {
+    color: white;
+}
+
+/* hover and active practice*/
+
+p:active{
+    border: hsla(0, 95%, 60%, .9) 5px solid;
+
+}
+
+h3:active+p{
+    visibility: hidden;
+    display: none;
+}
+
+li:first-of-type{
+    color: purple;
+}
+p::first-letter{
+    font-size: 200%;
+    text-transform: uppercase;
+}
+p:nth-child(3n){
+    background-color: green;
+}
+
+p:nth-child(3n+1){
+    background-color: red;
+}
+p:nth-child(3n+2){
+    background-color: aquamarine;
 }
